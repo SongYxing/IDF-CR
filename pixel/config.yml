@@ -1,0 +1,31 @@
+# folder path of dataset, which includes 2 subfolders: cloudy_image/ and ground_truth/
+datasets_dir:
+test_dir:
+
+out_dir: results
+
+cuda: True
+gpu_ids: [0]
+
+train_size: 0.95
+validation_size: 0.05 # 验证集大小是占训练集的半分比
+batchsize: 4
+validation_batchsize: 4
+epoch: 50
+n_data: 433
+width: 384
+height: 384
+threads: 4
+
+lr: 0.0004
+beta1: 0.5
+lamb: 100
+minimax: 1
+
+gen_init:
+dis_init:
+in_ch: 3
+out_ch: 3
+
+manualSeed: 0
+snapshot_interval: 10

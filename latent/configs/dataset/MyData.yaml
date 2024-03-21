@@ -1,0 +1,20 @@
+dataset:
+  target: dataset.MyData.MyDataset
+  params:
+    # Path to the file list.
+    lq_file_list:
+    gt_file_list:
+    # out_size: 512
+    out_size: 64
+    crop_type: center
+    use_hflip: False
+
+
+data_loader:
+  batch_size: 8
+  shuffle: true
+  num_workers: 4
+  drop_last: true
+
+batch_transform:
+  target: dataset.batch_transform.IdentityBatchTransform
