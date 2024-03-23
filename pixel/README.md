@@ -28,3 +28,10 @@ python predict_2.py
 python predict_whus2.py
 ```
 
+## SAR-F
+
+```bash
+# SAR-Fusion
+python mixup.py
+```
+
