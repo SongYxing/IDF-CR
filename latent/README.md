@@ -16,5 +16,5 @@ python inference.py
 
 ## INR
 
-Change the number in [ddpm.py](\latent\ldm\models\diffusion\ddpm.py) L489.
+Change the number in [ddpm.py](https://github.com/SongYxing/IDF-CR/blob/main/latent/ldm/models/diffusion/ddpm.py) L489.
 
