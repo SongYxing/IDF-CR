@@ -564,8 +564,8 @@ class Generator(nn.Module):
     def __init__(self, gpu_ids):
         super().__init__()
         self.device = torch.device("cuda:{}".format(gpu_ids[0]))
-        self.gen = nn.Sequential(OrderedDict([('gen', SPANet())]))
-        #self.gen = nn.Sequential(OrderedDict([('gen', SPANet_RSTB())]))
+        #self.gen = nn.Sequential(OrderedDict([('gen', SPANet())]))
+        self.gen = nn.Sequential(OrderedDict([('gen', SPANet_RSTB())]))
         # self.gen = nn.Sequential(OrderedDict([('gen', SPANet_RSTB_woCA())]))
         self.gen.apply(weights_init)
 
